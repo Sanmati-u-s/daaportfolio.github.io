@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Details</title>
+    
     <style>
         body {
-            font-family: 'Verdana', sans-serif;
+            font-family: 'Comic Sans MS', 'Comic Sans', cursive;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background-color: #ffffff;
             color: #333333;
             display: flex;
             flex-direction: column;
@@ -31,7 +31,7 @@
             width: 100%;
             border-collapse: collapse;
             margin: 20px 0;
-            background-color: #ffffff;
+            background-color: #fae3f1;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
         table, th, td {
@@ -42,7 +42,7 @@
             text-align: center;
         }
         th {
-            background-color: #814b8e;
+            background-color: #9f6dac;
             color: #ffffff;
         }
         footer {
@@ -53,49 +53,96 @@
             text-align: center;
         }
         .team-overview {
-            background-color: #ffffff;
+            background-color: #fae3f1;
             padding: 20px;
             margin-bottom: 20px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             text-align: center;
+        }
+        button {
+            padding: 10px 335px;
+            font-size: 16px;
+            font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+            color: #ffffff;
+            background-color: #c67c8f;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #fe9ba9;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Team Details</h1>
+    <h1>DESIGN AND ANALYSIS OF ALGORITHMS</h1>
+    <h2 style="color: rgb(248, 231, 79);">COURSE PROJECT</h2>
+    
+    <style>
+        .button-container {
+            display: flex;
+            justify-content: center;
+        }
+    
+        .button-container button {
+            margin: 5px;
+            width: 50px;
+            height: 30px;
+            padding: 5px;
+            font-size: 14px;
+        }
+    </style>
+    
+    <div class="button-container">
+        <button onclick="window.location.href = 'daa learning and reflections.html';">-></button>
+    </div>
+    
 </header>
 
 <main>
     <section class="team-overview">
-        <h2>Team Overview</h2>
-        <p>Welcome to our team! We are a group of dedicated professionals with diverse skill sets, working together to achieve excellence in our projects. Our team is composed of experienced developers, analysts, and a strong leader guiding us towards success.</p>
+        <h2 style="color: rgb(196, 122, 58);">“Chirasmriti: A city of Eternal Memory”</h2>
+        <p>Earlier in this course, a barren land of approximately 1500 sq km was designated for conversion into a smart city. Like other cities around the world, this city will require basic facilities such as infrastructure, healthcare, education, electricity, water systems, and many more. The conceptual design was developed by the team . The development of the city is divided into three phases, with the first phase primarily focusing on the establishment of an efficient and sustainable transportation system connecting different parts of the city. This transportation system includes road paving and the development of metro tracks. Hence, the domain of smart metro transportation was chosen. What makes metro transportation "smart"? The integration of advanced technologies to address challenges such as optimizing time scheduling, developing efficient route networks, constructing sustainable railway infrastructure, and effectively managing passenger flow forms the core definition of a smart metro transportation system. However, upon analyzing "The Streets" (white sheet paper), it became clear that these are not the only factors that contribute to making transportation truly smart.The sustainability and stability of the system also contribute significantly to its "smart" nature. The designs introduced must be stable enough to handle future growth. For example, if the population increases exponentially in the coming years, the metro system should remain functional and efficient. The infrastructure must be capable of balancing increased demand. All these considerations were realised after analyzing the white sheet paper. Through this project, we have aimed to integrate and implement the course topics that are relevant to the development of the city.</p>
     </section>
-    <h2>Meet the Team</h2>
+        <section style="background-color: rgb(207, 187, 218); text-align: center;">
+            <h2 style="color: rgb(60, 34, 72);"> MODULE DESCRIPTION</h2>
+            <h3> Managing Crowd Density: Designing Smart Solutions for Platform Crowd Management:</h3>
+            <p>  Platform crowd management uses real-time data from sensors, cameras, and ticketing systems to monitor passenger movements and crowd density. This helps to predict congestion and adjust train schedules to optimize the passenger flow and enhance safety.</p>
+        </section>  
+        <button onclick="openFile()">My Module (Project Report)</button>
+
+    <script>
+    function openFile() {
+        window.open('file:///C:/Users/sanma/Downloads/Sanmati%27s%20DAA%20Report.docx%20(2).pdf');
+    }
+    </script>      
+    <h2 style="color: rgb(255, 80, 150);">Team Details</h2>
     <table>
         <tr>
             <th>Name</th>
-            <th>Role</th>
+            <th>Module</th>
         </tr>
         <tr>
-            <td>Sanmati Shinganmakki</td>
-            <td>Team Leader</td>
+            <td>Vindhya Hegde</td>
+            <td>Efficient Route Network</td>
         </tr>
         <tr>
-            <td>John Doe</td>
-            <td>Backend Developer</td>
+            <td>Anagha Hegde</td>
+            <td>Efficient ticketing system</td>
         </tr>
         <tr>
-            <td>Jane Smith</td>
-            <td>Frontend Developer</td>
+            <td>Sanmati U.S</td>
+            <td>Platform Crowd Management</td>
         </tr>
         <tr>
-            <td>Chris Johnson</td>
-            <td>Data Analyst</td>
+            <td>Suman Mogali</td>
+            <td>Quick Transport between platforms</td>
         </tr>
-    </table>
-</main>
+    </table>  
+    
+    </main>
 
 <footer>
     <p>&copy; 2025 Your Name. All rights reserved.</p>
