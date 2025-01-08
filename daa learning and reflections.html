@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Details</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #000000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+            background-color: #5e3668;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            width: 100%;
+        }
+        main {
+            max-width: 800px;
+            width: 100%;
+            padding: 20px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            background-color: #f8e3f7;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            box-sizing: border-box;
+        }
+        footer {
+            background-color: #5e3668;
+            color: #847b7b;
+            padding: 30px 0;
+            width: 100%;
+            text-align: center;
+        }
+        .team-overview {
+            background-color: #814b8e;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+<header >
+    
+    <h1 >DESIGN AND ANALYSIS OF ALGORITHMS</h1>
+    <h2 style="color: rgb(248, 231, 79);"">COURSE LEARNING REFLECTIONS</h2>
+</header>
+
+<main>
+    <section class="team-overview">
+        <section><h2 style="color: rgb(250, 59, 113);">1)What are the kinds of problems we see in the nature? (iteration, recursion, backtracking)</h2>
+        <h3>Patterns in Nature and Algorithms</h3>
+            <p>The connection between algorithms and patterns in nature showcases how natural processes have inspired advancements in computational systems. For instance:</p> 
+            <p>Herd Behavior in Animals: The way animal herds organize themselves based on local interactions is similar to the Merge Sort algorithm, where smaller groups are sorted and merged into a larger ordered structure.</p>
+            <p>Predatory Hunting: The strategy used by predators to locate prey mirrors the Binary Search method, focusing on efficiently narrowing down search space.</p>
+            <p>Neural Networks: Inspired by the human brain’s interconnected neurons, neural networks adapt and learn, paralleling the brain’s natural learning process.</p>
+            <p>This synergy enhances both technological progress and our understanding of natural phenomena.</p>
+            <br>
+            <br>
+        <h2 style="color: rgb(250, 59, 113);">2)What is space and time efficiency? Why are they important? Explain the different class of problems and orders of growth</h2>
+        <h3>Space and Time Efficiency in Algorithms</h3>
+        <p>Space Efficiency: Refers to how well an algorithm uses memory during execution. Space complexity measures the amount of memory required in relation to input size. This is critical in systems with limited resources.</p>
+        <p>Time Efficiency: Measures how fast an algorithm performs its task based on the input size, often quantified through time complexity. It is essential for large datasets or real-time applications.        </p>
+        <p>Orders of Growth<br>
+            O(1): Constant time (e.g., accessing an array element).<br>
+            O(log n): Logarithmic time (e.g., binary search).<br>
+            O(n): Linear time (e.g., iterating through an array).<br>
+            O(n log n): Log-linear time (e.g., merge sort).<br>
+            O(n²): Quadratic time (e.g., bubble sort).<br>
+            O(2ⁿ): Exponential time (e.g., solving the traveling salesman problem).<br><br>
+            </p>
+            <h2 style="color: rgb(250, 59, 113);">3)Take away from different design principles from chapter 2 </h2>
+            <h3>Algorithm Design Principles</h3>
+                <p>Divide and Conquer: Break a problem into smaller subproblems, solve them independently, and merge their results. Examples: Merge Sort, Quick Sort.<br><br>
+                    Greedy Approach: Make the locally optimal choice at each step, hoping it leads to a globally optimal solution. Example: Dijkstra’s Algorithm (shortest path).<br><br>
+                    Dynamic Programming: Solve problems by breaking them into overlapping subproblems and storing intermediate results to avoid redundant calculations. Examples: Fibonacci Sequence, Knapsack Problem.<br><br>
+                    Backtracking: Explore all possible solutions, backtracking when an invalid solution is encountered. Example: Sudoku Solver, N-Queens Problem.<br><br>
+                    Brute Force: Try all potential solutions systematically. Example: Linear Search, String Matching.</p>
+                <br>
+                <br>
+                <h2 style="color: rgb(250, 59, 113);">4)The hierarchical data and how different tree data structures solve and optimize over the problem scenarios (tree, bst, avl, 2-3, red-black, heap, trie)</h2>
+                <h3> Trees and Hierarchical Data Structures</h3>
+                <p>Types of Trees</p>
+                    <p>Binary Tree: A tree where each node has at most two children.<br><br>
+                        Binary Search Tree (BST): A binary tree where the left and right subtrees are ordered for efficient searching, insertion, and deletion.<br><br>
+                        AVL Tree: A self-balancing BST with a height difference constraint between subtrees. Time complexity: O(log n).<br><br>
+                        Red-Black Tree: A self-balancing BST with a more relaxed balancing requirement. Time complexity: O(log n).<br><br>
+                        N-ary Tree: A tree where each node can have up to N children.<br><br>
+                        Trie: A tree-like structure used for storing strings, optimizing operations like autocomplete.<br><br>
+                        Heap: A complete binary tree following the heap property (Max-heap or Min-heap).</p>
+                        <br>
+                    <br>
+                <h2 style="color: rgb(250, 59, 113);">5)The need of array query algorithms and their implications. Their applications and principles need to be discussed</h2>
+                    <h3> Array Query Algorithms</h3>
+                    <p>Array query algorithms efficiently answer specific questions or perform operations on data within an array. Key examples include Sparse Tables, Fenwick Trees, Segment Trees, and Lookup Tables.</p>
+                <br>
+                <br>
+                <h2 style="color: rgb(250, 59, 113);">6)Differentiate between tree and graphs and their traversals. The applications of each</h2>
+                    <h3>Trees vs Graphs </h3>
+                    <p>Trees are a specialized type of graph with specific constraints: they are connected, acyclic, and hierarchical. They are used to represent hierarchical data structures and optimize search operations. Graphs, in contrast, are more versatile and can represent complex relationships, such as those found in social networks, pathfinding algorithms, and network routing. </p>
+                 <br>
+                <br>
+                <h2 style="color: rgb(250, 59, 113);">7)Deliberate on sorting and searching algorithms, the technique behind each and they connect to real world</h2>
+                    <h3> Sorting and Searching Algorithms</h3>
+                    <p>Sorting Algorithms<br>
+                        Bubble Sort<br>
+                        Merge Sort<br>
+                        Quick Sort<br>
+                        Selection Sort<br>
+                        Insertion Sort<br>
+                        Heap Sort<br>
+                        Searching Algorithms<br>
+                        Linear Search<br>
+                        Binary Search<br>
+                        Depth-First Search (DFS)<br>
+                        Breadth-First Search (BFS)</p>
+                 <br>
+                <br>
+                <h2 style="color: rgb(250, 59, 113);">8)Discuss the importance of graph algorithms with respect to spanning trees and shortest paths</h2>
+                    <h3>Importance of Graph Algorithms</h3>
+                    <p>Spanning Trees<br>
+                        Minimize connectivity costs in networks.<br>
+                        
+                        Shortest Paths<br>
+                        Optimize routes for navigation and communication.<br>
+                        
+                        Applications<br>
+                        GPS systems, network design, and data packet routing.<br>
+                    </p>
+                 <br>
+                <br>
+                <h2 style="color: rgb(250, 59, 113);">9)Discuss about the different studied algorithm design techniques.</h2>
+                    <h3>Studied Algorithm Design Techniques</h3>
+                    <p>Backtracking<br>
+                        Backtracking is like trying to solve a puzzle by making a series of guesses, and if a guess turns out to be wrong, you backtrack and try a different guess. Examples include the N-Queens Problem.<br><br>
+                        
+                        Kruskal's Algorithm<br>
+                        Kruskal's Algorithm adds edges in increasing order of weight, avoiding cycles, until all vertices are connected.<br><br>
+                        
+                        Dijkstra's Algorithm<br>
+                        Dijkstra's Algorithm finds the shortest path from a source vertex to all other vertices in a graph with non-negative weights.<br>
+                <br>
+    </section>
+   
+    
+</main>
+
+<footer>
+    <p>&copy; 2025 Sanmati. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
