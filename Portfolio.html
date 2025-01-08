@@ -27,7 +27,7 @@
             margin: 20px 0;
         }
         nav a {
-            color: #ffffff;
+            color: #eec0fa;
             margin: 0 15px;
             text-decoration: none;
             cursor: pointer;
@@ -52,15 +52,15 @@
             box-sizing: border-box;
         }
         section:hover {
-           background-color: #380038; /* Color when hovered */
+           background-color: #380038;
         }
         .projects {
-            display: block; /* Changed from flex to block */
+            display: block;
             margin-top: 20px;
         }
         .project {
-            width: 100%; /* Full width for each project */
-            margin-bottom: 20px; /* Space between the projects */
+            width: 100%;
+            margin-bottom: 20px;
             border: 1px solid #c998ad;
             border-radius: 5px;
             padding: 15px;
@@ -79,48 +79,90 @@
             bottom: 0;
             width: 100%;
         }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+            color: #ffffff;
+            background-color: #c67c8f;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #fe9ba9;
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <section><h1 style="color: rgb(255, 255, 255);"><strong>DESIGN AND ANALYSIS OF ALGORITHMS</strong></h1>
-    <h3>Welcome to my Portfolio! 🌟</h3></section>
+    <section>
+        <h1 style="color: rgb(255, 255, 255);"><strong>DESIGN AND ANALYSIS OF ALGORITHMS</strong></h1>
+        <h2 style="color: rgb(240, 190, 72);">Sanmati U Shinganmakki</h2>
+        <h3>Welcome to my Portfolio! ✨</h3>
+    </section>
     <nav>
-        <a href="#about"><strong>About</strong></a>
+        <a href="#about"><strong>About Me</strong></a>
         <a href="#projects"><strong>Projects</strong></a>
         <a href="#skills"><strong>Skills</strong></a>
         <a href="#portfolio-topic"><strong>Portfolio Topic</strong></a>
         <a href="#contact"><strong>Contact</strong></a>
-    </ ```html
+        <br>
+        <br>
+        <button onclick="window.location.href = 'daa about course.html';">About Course</button>
+        <button onclick="window.location.href = 'daa_course_project.html';">Course Project</button>
+        <button onclick="window.location.href = 'daa learning and reflections.html';">Learning and Reflections</button>
+
     </nav>
 </header>
 
 <main>
-   <section id="about">
+    <style>
+        #about {
+            display: flex;
+            align-items: center;
+        }
+    
+        #about img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+    border: 4px solid #fd87a2; /* Add border here */
+}
+
+    
+        #about p {
+            max-width: 600px;
+        }
+    </style>
+    
+    
+    <section id="about">
         <img src="Sanmati1.jpeg" alt="Sanmati U S">
         <div>
             <h2 style="color: rgb(253, 215, 78);">About Me 💻</h2>
             <p style="color: rgb(255, 255, 255);">Hi, I'm Sanmati Shinganmakki, currently studying at KLE Technological University. I am deeply passionate about design and analysis of algorithms and I find it fascinating how complex real-world problems can be tackled through efficient algorithms. I am committed to building a strong foundation in this field and developing my expertise to create meaningful, innovative solutions for intricate challenges.</p>
         </div>
     </section>
+    
 
     <section id="projects">
         <h2 style="color: rgb(253, 215, 78);">Projects 🛠️</h2>
         <div class="projects">
             <div class="project">
                 <h3><strong>Project 1: Braiding Machine (Course-Engineering Exploration)</strong></h3>
-                <p style="color: rgb(72, 3, 67);"><strong>Braiding Machine(Engineering Exploration) a semi-automatic, compact, and lightweight device that is portable, and can braid thread/yarn. The machine was controlled with an app integrated with aurdino. The LCD display indicated the progress.</strong></p>
+                <p style="color: rgb(72, 3, 67);"><strong>Braiding Machine(Engineering Exploration) a semi-automatic, compact, and lightweight device that is portable, and can braid thread/yarn. The machine was controlled with an app integrated with Arduino. The LCD display indicated the progress.</strong></p>
             </div>
             <div class="project">
-                <h3><strong>Project 2: Artificial Reservior (Course-Design Thinking and Innovation)</strong></h3>
-                <p style="color: rgb(72, 3, 67);"><strong>Farmers in Unkal village needed a way to address water scarcity (might be due to insufficient rain or depleted ground water level) and access the facilities to reserve available water at affordable cost to achieve more productivity and higher yield. Our project delt with building an efficient but cost friendly artificial reservior to conserve rain water and contacting a suitable stakeholder to issue loan for contruction of such reservior.</strong></p>
+                <h3><strong>Project 2: Artificial Reservoir (Course-Design Thinking and Innovation)</strong></h3>
+                <p style="color: rgb(72, 3, 67);"><strong>Farmers in Unkal village needed a way to address water scarcity (might be due to insufficient rain or depleted ground water level) and access the facilities to reserve available water at affordable cost to achieve more productivity and higher yield. Our project dealt with building an efficient but cost-friendly artificial reservoir to conserve rainwater and contacting a suitable stakeholder to issue loans for construction of such a reservoir.</strong></p>
             </div>
             <div class="project">
                 <h3><strong>Project 3: City Design (Course - Design and Analysis of Algorithms)</strong></h3>
                 <p style="color: rgb(72, 3, 67);"><strong>This project deals with transforming a barren land covering 1500 sq. km into a smart city with essential infrastructure, healthcare facilities, educational setups, electricity generation, and water distribution systems. The conceptual design is developed by the team, which is depicted in the figure below. The three phases of the development have divided the first one to focus on a sustainable transportation system, thereby developing metros. Hence, the smart metro transportation was the domain that was chosen for this project.</strong></p>
             </div>
-            <!-- Add more projects as needed -->
         </div>
     </section>
 
@@ -177,6 +219,9 @@
 </footer>
 
 <script>
+    function openNewPage() {
+        window.open('achievements.html', '_blank');
+    }
     document.querySelectorAll('nav a').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
@@ -188,4 +233,4 @@
 </script>
 
 </body>
-</html> 
+</html>
