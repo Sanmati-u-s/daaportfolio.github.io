@@ -6,60 +6,84 @@
     <title>Team Details</title>
     <style>
         body {
-            font-family: 'Verdana', sans-serif;
+            font-family: 'Comic Sans MS', 'Comic Sans', cursive;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
-            color: #333333;
+            background-color: #ffffff;
+            color: #000000;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
         header {
-            background-color: #814b8e;
+            font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+            background-color: #5e3668;
             color: #ffffff;
             padding: 20px 0;
             text-align: center;
             width: 100%;
         }
         main {
-            padding: 20px;
             max-width: 800px;
             width: 100%;
+            padding: 20px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            background-color: #f8e3f7;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            box-sizing: border-box;
         }
         footer {
-            background-color: #814b8e;
-            color: #ffffff;
-            padding: 10px 0;
+            background-color: #5e3668;
+            color: #847b7b;
+            padding: 30px 0;
             width: 100%;
             text-align: center;
         }
         .team-overview {
-            background-color: #ffffff;
-            padding: 20px;
+            background-color: #814b8e;
+            padding: 10px;
             margin-bottom: 20px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
+            text-align: left;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Team Details</h1>
+<header >
+    
+    <h1 >DESIGN AND ANALYSIS OF ALGORITHMS</h1>
+    <h2 style="color: rgb(248, 231, 79);"">ABOUT COURSE</h2>
+    <button onclick="window.location.href = 'daa_course_project.html';">-></button>
 </header>
 
 <main>
     <section class="team-overview">
-        <h2>About Course</h2>
-        <p>Welcome to our team! We are a group of dedicated professionals with diverse skill sets, working together to achieve excellence in our projects. Our team is composed of experienced developers, analysts, and a strong leader guiding us towards success.</p>
+        <section><h2 style="color: rgb(250, 59, 113);">What is the course about?</h2>
+        <p>The Design and Analysis of Algorithms course provides a comprehensive foundation for developing efficient solutions to computational problems. It introduces key algorithm design strategies like divide and conquer, dynamic programming, and greedy algorithms. It focuses on analyzing algorithm efficiency using asymptotic notations such as Big O, Big Theta, and Big Omega. The course also explores data structures like graphs, trees, and heaps for optimizing performance. Students gain skills to design and evaluate algorithms for real-world applications.</p></section>
+        <section><h2 style="color: rgb(250, 59, 113);">What kind of data structures and algorithms have you studied?</h2>
+        <p>-Throughout this course I've learnt about Data Structures like Graphs and Trees, Tries, AVL Trees, 2-3 Trees, Red-Black Trees, DFS, BFS, Heap, Fenwick Trees, Skip Lists.</p>
+        <p>-Sorting Techniques - Bubble sort, Selection sort, Merge sort, Quick sort, Heap sort, Insertion sort</p>
+        <p>-Searching Techniques</p>
+        <p>-Graph Algorithms - Shortest Path (Floyd's Algorithm, Warshall's Algorithm), Union-find and Spanning Trees (minimun spanning trees - Kruskal's Algorithm, Prim's Algorithm), Bellman Ford, Dijkstras</p>
+        <p>-Pattern Matching - Knuth-Morris-Pratt (KMP) Algorithm, Boyer-Moore Algorithm, Rabin-Karp Algorithm</p></section>
+        <section><h2 style="color: rgb(250, 59, 113);">How do you connect the course with real time applications?</h2>
+            <p>The Design and Analysis of Algorithms (DAA) course is vital for real-time applications, teaching techniques like Dijkstra’s Algorithm for network routing, sorting and searching for database management, and Huffman coding for data compression. It also underpins machine learning optimization, web search engines, and personalized recommendation systems. Algorithm efficiency is crucial in real-time systems, game development, and security, making DAA principles essential for solving complex, practical problems across industries.</p></section>
+        
     </section>
    
     
 </main>
 
 <footer>
-    <p>&copy; 2025 Your Name. All rights reserved.</p>
+    <p>&copy; 2025 Sanmati. All rights reserved.</p>
 </footer>
 
 </body>
